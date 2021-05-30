@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adftemp0123"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"ls_json_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://temp0123adlsg2.dfs.core.windows.net"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "https://github.com"
+		},
+		"trigger_gen_https_adlsg2_properties_pipeline_gen_parameters_src": {
+			"value": "cloudboxacademy/covid19/raw/main/ecdc_data/country_response.csv"
+		},
+		"trigger_gen_https_adlsg2_properties_pipeline_gen_parameters_tgt": {
+			"value": "country_response.csv"
+		}
+	}
+}
