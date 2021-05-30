@@ -52,7 +52,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"src_rltv_parm": {
-								"value": "@pipeline().parameters.src_rtlv",
+								"value": "@variables('src')",
 								"type": "Expression"
 							}
 						}
@@ -64,7 +64,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"tgt_file_nm": {
-								"value": "@pipeline().parameters.tgt_fil",
+								"value": "@variables('tgt')",
 								"type": "Expression"
 							}
 						}
@@ -75,11 +75,11 @@
 		"variables": {
 			"src": {
 				"type": "String",
-				"defaultValue": "cloudboxacademy/covid19/raw/main/ecdc_data/hospital_admission.csv"
+				"defaultValue": "cloudboxacademy/covid19/raw/main/ecdc_data/hospital_admissions.csv"
 			},
 			"tgt": {
 				"type": "String",
-				"defaultValue": "hospital_admission.csv"
+				"defaultValue": "hospital_admissions.csv"
 			}
 		},
 		"annotations": []
