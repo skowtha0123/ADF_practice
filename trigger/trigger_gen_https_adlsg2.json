@@ -1,0 +1,17 @@
+{
+	"name": "trigger_gen_https_adlsg2",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2021-05-04T23:29:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
