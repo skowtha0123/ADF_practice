@@ -21,11 +21,11 @@
 		},
 		"trigger_gen_https_adlsg2_properties_pipeline_gen_parameters_src": {
 			"type": "string",
-			"defaultValue": "cloudboxacademy/covid19/raw/main/ecdc_data/hospital_admissions.csv"
+			"defaultValue": "cloudboxacademy/covid19/raw/main/ecdc_data/country_response.csv"
 		},
 		"trigger_gen_https_adlsg2_properties_pipeline_gen_parameters_tgt": {
 			"type": "string",
-			"defaultValue": "hospital_admissions.csv"
+			"defaultValue": "country_response.csv"
 		}
 	},
 	"variables": {
@@ -251,7 +251,7 @@
 					"recurrence": {
 						"frequency": "Minute",
 						"interval": 15,
-						"startTime": "2021-05-30T23:34:00",
+						"startTime": "2021-05-30T23:36:00",
 						"timeZone": "India Standard Time"
 					}
 				}

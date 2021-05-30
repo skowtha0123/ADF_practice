@@ -21,11 +21,11 @@
 		},
 		"trigger_gen_https_adlsg2_properties_pipeline_gen_parameters_src": {
 			"type": "string",
-			"defaultValue": "cloudboxacademy/covid19/raw/main/ecdc_data/hospital_admissions.csv"
+			"defaultValue": "cloudboxacademy/covid19/raw/main/ecdc_data/country_response.csv"
 		},
 		"trigger_gen_https_adlsg2_properties_pipeline_gen_parameters_tgt": {
 			"type": "string",
-			"defaultValue": "hospital_admissions.csv"
+			"defaultValue": "country_response.csv"
 		},
 		"containerUri": {
 			"type": "string",
