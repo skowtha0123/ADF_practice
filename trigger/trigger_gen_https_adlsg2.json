@@ -10,8 +10,8 @@
 					"type": "PipelineReference"
 				},
 				"parameters": {
-					"src": "cloudboxacademy/covid19/raw/main/ecdc_data/hospital_admissions.csv",
-					"tgt": "hospital_admissions.csv"
+					"src": "cloudboxacademy/covid19/raw/main/ecdc_data/country_response.csv",
+					"tgt": "country_response.csv"
 				}
 			}
 		],
