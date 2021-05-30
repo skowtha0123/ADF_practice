@@ -2,7 +2,7 @@
 	"name": "trigger_gen_https_adlsg2",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipelines": [
 			{
 				"pipelineReference": {
