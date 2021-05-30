@@ -14,6 +14,12 @@
 		"HttpServer1_properties_typeProperties_url": {
 			"value": "https://github.com"
 		},
+		"trigger_gen_https_adlsg2_properties_pipeline_gen_parameters_src": {
+			"value": "cloudboxacademy/covid19/raw/main/ecdc_data/hospital_admissions.csv"
+		},
+		"trigger_gen_https_adlsg2_properties_pipeline_gen_parameters_tgt": {
+			"value": "hospital_admissions.csv"
+		},
 		"containerUri": {
 			"value": ""
 		},

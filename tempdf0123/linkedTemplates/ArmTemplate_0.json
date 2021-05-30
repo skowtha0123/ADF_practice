@@ -18,6 +18,14 @@
 		"HttpServer1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://github.com"
+		},
+		"trigger_gen_https_adlsg2_properties_pipeline_gen_parameters_src": {
+			"type": "string",
+			"defaultValue": "cloudboxacademy/covid19/raw/main/ecdc_data/hospital_admissions.csv"
+		},
+		"trigger_gen_https_adlsg2_properties_pipeline_gen_parameters_tgt": {
+			"type": "string",
+			"defaultValue": "hospital_admissions.csv"
 		}
 	},
 	"variables": {
@@ -217,6 +225,39 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/htts_src')]",
 				"[concat(variables('factoryId'), '/datasets/tgtfile')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/trigger_gen_https_adlsg2')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "pipeline_gen",
+							"type": "PipelineReference"
+						},
+						"parameters": {
+							"src": "[parameters('trigger_gen_https_adlsg2_properties_pipeline_gen_parameters_src')]",
+							"tgt": "[parameters('trigger_gen_https_adlsg2_properties_pipeline_gen_parameters_tgt')]"
+						}
+					}
+				],
+				"type": "ScheduleTrigger",
+				"typeProperties": {
+					"recurrence": {
+						"frequency": "Minute",
+						"interval": 15,
+						"startTime": "2021-05-04T23:29:00",
+						"timeZone": "India Standard Time"
+					}
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/pipeline_gen')]"
 			]
 		}
 	]
