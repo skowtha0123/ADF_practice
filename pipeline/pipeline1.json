@@ -48,15 +48,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ds_newfile",
+						"referenceName": "htts_src",
 						"type": "DatasetReference",
 						"parameters": {
-							"http_rtlv_url": {
+							"src_rltv_parm": {
 								"value": "@pipeline().parameters.src_rtlv",
 								"type": "Expression"
-							},
-							"http_rltv_url": null,
-							"http_rltv_prm": null
+							}
 						}
 					}
 				],
@@ -76,11 +74,19 @@
 		],
 		"parameters": {
 			"src_rtlv": {
-				"type": "string",
-				"defaultValue": "cloudboxacademy/covid19/raw/main/ecdc_data/hospital_admission.csv"
+				"type": "string"
 			},
 			"tgt_fil": {
-				"type": "string",
+				"type": "string"
+			}
+		},
+		"variables": {
+			"src": {
+				"type": "String",
+				"defaultValue": "cloudboxacademy/covid19/raw/main/ecdc_data/hospital_admission.csv"
+			},
+			"tgt": {
+				"type": "String",
 				"defaultValue": "hospital_admission.csv"
 			}
 		},
