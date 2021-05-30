@@ -54,7 +54,9 @@
 							"http_rtlv_url": {
 								"value": "@pipeline().parameters.src_rtlv",
 								"type": "Expression"
-							}
+							},
+							"http_rltv_url": null,
+							"http_rltv_prm": null
 						}
 					}
 				],
