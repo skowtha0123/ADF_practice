@@ -60,7 +60,7 @@
 							"typeProperties": {
 								"variableName": "set_var",
 								"value": {
-									"value": "@activity('Lookup1').output.value",
+									"value": "@item().sourceRelativeURL",
 									"type": "Expression"
 								}
 							}
