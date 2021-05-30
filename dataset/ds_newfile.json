@@ -5,12 +5,24 @@
 			"referenceName": "HttpServer1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"http_rtlv_url": {
+				"type": "String",
+				"defaultValue": "cloudboxacademy/covid19/raw/main/ecdc_data/cases_deaths.csv"
+			},
+			"http_rltv_url": {
+				"type": "String"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "cloudboxacademy/covid19/raw/main/ecdc_data/cases_deaths.csv"
+				"relativeUrl": {
+					"value": "@dataset().http_rtlv_url",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
