@@ -72,14 +72,6 @@
 				]
 			}
 		],
-		"parameters": {
-			"src_rtlv": {
-				"type": "string"
-			},
-			"tgt_fil": {
-				"type": "string"
-			}
-		},
 		"variables": {
 			"src": {
 				"type": "String",
