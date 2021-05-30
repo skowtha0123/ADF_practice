@@ -119,7 +119,22 @@
 						"value": "@activity('Lookup1').output.value",
 						"type": "Expression"
 					},
-					"isSequential": true
+					"isSequential": true,
+					"activities": [
+						{
+							"name": "Set variable1",
+							"type": "SetVariable",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "src",
+								"value": {
+									"value": "@item().sourceRelativeURL",
+									"type": "Expression"
+								}
+							}
+						}
+					]
 				}
 			}
 		],
@@ -129,6 +144,11 @@
 			},
 			"tgt": {
 				"type": "string"
+			}
+		},
+		"variables": {
+			"src": {
+				"type": "String"
 			}
 		},
 		"annotations": []
